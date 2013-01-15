@@ -4,7 +4,7 @@
 [ -x /usr/bin/lsb_release ] || (echo This script should be run on Ubuntu; exit 1)
 [ `lsb_release -sr` = 12.10 ] || (echo This script should be run on Ubuntu 12.10; exit 1)
 
-[ -z $RBENV_ROOT ] || RBENV_ROOT=/usr/local/rbenv
+[ ! -z $RBENV_ROOT ] || RBENV_ROOT=/usr/local/rbenv
 
 # install packages
 apt-get install build-essential libncurses5-dev libgdbm-dev libyaml-dev tk-dev libreadline-dev zlib1g-dev libssl-dev libssl1.0.0 git-core curl
