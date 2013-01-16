@@ -9,7 +9,7 @@ set -e
 [ ! -z $RBENV_ROOT ] || RBENV_ROOT=/usr/local/rbenv
 
 # install packages
-apt-get install build-essential libncurses5-dev libgdbm-dev libyaml-dev tk-dev libreadline-dev zlib1g-dev libssl-dev libssl1.0.0 git-core curl
+apt-get install build-essential libncurses5-dev libgdbm-dev libyaml-dev tk-dev libreadline-dev zlib1g-dev libssl-dev libffi-dev libssl1.0.0 git-core curl
 
 mkdir -p $RBENV_ROOT
 cd $RBENV_ROOT
