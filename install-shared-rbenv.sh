@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 [ `id -u` = 0 ] || (echo This script should be run as root; exit 1)
 [ -x /usr/bin/lsb_release ] || (echo This script should be run on Ubuntu; exit 1)
 [ `lsb_release -sr` = 12.10 ] || (echo This script should be run on Ubuntu 12.10; exit 1)
