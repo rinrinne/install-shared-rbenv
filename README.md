@@ -9,14 +9,25 @@ How to use shared rbenv
 ===========================
 
 Use without user setting
----------------------------
+```
+$ sudo mv dot.profile /etc/profile.d/Z99-rbenv.sh
+```
 
-please move dot.profile to /etc/profile.d/Z99-rbenv.sh.
+Or setup by each users
+```
+$ cat dot.profile | sed -e 's/^#.*//' >> $HOME/.profile
+```
 
-Setup by each users
----------------------------
+How to use gem
+===========================
 
-user can append dot.profile to $HOME/.profile.
+bundle is already installed into shared ruby. So you can use gem via bundle.
+
+If you want to update bundle, please do the below operation.
+
+```
+$ sudo env RBENV_ROOT=/usr/local/rbenv /usr/local/rbenv/bin/rbenv exec gem update
+```
 
 How to call ruby from system
 ==========================
