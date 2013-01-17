@@ -18,8 +18,11 @@ Setup by each users
 
 user can append dot.profile to $HOME/.profile.
 
-How to call ruby in system
+How to call ruby from system
 ==========================
+
+System - no profile, no *rbenv init*
+
 
 ```
 $ export RBENV_ROOT=/usr/local/rbenv
