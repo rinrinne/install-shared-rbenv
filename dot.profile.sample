@@ -1,6 +1,5 @@
-#!/bin/sh
-
-RBENV_ROOT=/usr/local/rbenv
+# Shared rbenv
+RBENV_ROOT=__RBENV_ROOT__
 
 if [ -d $RBENV_ROOT ]; then
   export RBENV_ROOT
