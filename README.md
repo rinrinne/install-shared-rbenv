@@ -31,7 +31,7 @@ Install shared rbenv
 ===========================
 
 ```
-$ ./install-shared-rbenv.sh
+$ ./install-shared-rbenv
 ```
 
 If you want to install into system directory, this should be run as root.
@@ -100,7 +100,7 @@ Update rbenv or install another ruby version
 
 Same as install.
 
-If `RBENV_ROOT` is already exist as directory, `install-shared-rbenv.sh` will update rbenv and plugins then install ruby with `RBENV_VERSION`.
+If `RBENV_ROOT` is already exist as directory, `install-shared-rbenv` will update rbenv and plugins then install ruby with `RBENV_VERSION`.
 
 FAQ
 ===========================
