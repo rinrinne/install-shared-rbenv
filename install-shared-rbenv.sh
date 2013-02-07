@@ -5,7 +5,7 @@ set -e
 CURRENT=`pwd`
 
 [ ! -z $RBENV_ROOT ] || RBENV_ROOT=/usr/local/rbenv
-[ ! -z $RBENV_VERSION ] || RBENV_VERSION=1.9.3-p327
+[ ! -z $RBENV_VERSION ] || RBENV_VERSION=1.9.3-p385
 
 if [ -d $RBENV_ROOT ]; then
   cd $RBENV_ROOT
