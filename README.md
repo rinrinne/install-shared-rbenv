@@ -47,6 +47,12 @@ Or setup by each users
 $ cat dot.profile >> $HOME/.profile
 ```
 
+In addition, rbenv wrapper named `shared-rbenv` is generated into current directory. You can use it if you want to run rbenv itself.
+
+```
+$ ./shared-rbenv
+```
+
 Use shared rbenv without profile setting
 ============================
 
@@ -61,6 +67,12 @@ $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbe
 $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv global $RBENV_VERSION
 ```
 
+Or, run with shared-rbenv
+
+```
+$ ./shared-rbenv exec ruby SCRIPTFILE
+```
+
 Use gem
 ===========================
 
@@ -70,4 +82,28 @@ If you don't use any profile settings, bundle can be run with the below command.
 
 ```
 $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv exec bundle
+```
+
+Or run with shared-rbenv
+
+```
+$ ./shared-rbenv exec bundle
+```
+
+Update rbenv or install another ruby version
+===========================
+
+Same as install.
+
+If `RBENV_ROOT` is already exist as directory, `install-shared-rbenv.sh` will update rbenv and plugins then install ruby with `RBENV_VERSION`.
+
+FAQ
+===========================
+
+## What ruby version is available?
+
+At first, you should install once by default. Then you can run the below command to get available ruby versons.
+
+```
+$ ./shared-rbenv install -l
 ```

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export RBENV_ROOT=__RBENV_ROOT__
+export RBENV_VERSION=__RBENV_VERSION__
+
+$RBENV_ROOT/bin/rbenv "$@"
