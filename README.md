@@ -53,6 +53,8 @@ In addition, rbenv wrapper named `shared-rbenv` is generated into current direct
 $ ./shared-rbenv
 ```
 
+You can move `shared-rbenv` to any directory then run it.
+
 Use shared rbenv without profile setting
 ============================
 
