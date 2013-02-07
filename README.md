@@ -65,14 +65,14 @@ Use shared rbenv without profile setting
 $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv exec ruby SCRIPTFILE
 ```
 
-* If you export RBENV_ROOT and RBENV_VERSION, you can remove them from commnad line.
-* If you set default version using `rbenv global`, The above command line can be run without RBENV_VERSION.
+* If you export `RBENV_ROOT` and `RBENV_VERSION`, you can remove them from commnad line.
+* If you set default version using `rbenv global`, The above command line can be run without `RBENV_VERSION`.
 
 ```
 $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv global $RBENV_VERSION
 ```
 
-Or, run with shared-rbenv
+Or, run with `shared-rbenv`
 
 ```
 $ ./shared-rbenv exec ruby SCRIPTFILE
@@ -89,7 +89,7 @@ If you don't use any profile settings, bundle can be run with the below command.
 $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv exec bundle
 ```
 
-Or run with shared-rbenv
+Or run with `shared-rbenv`
 
 ```
 $ ./shared-rbenv exec bundle
