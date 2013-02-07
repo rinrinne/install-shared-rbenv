@@ -107,3 +107,14 @@ At first, you should install once by default. Then you can run the below command
 ```
 $ ./shared-rbenv install -l
 ```
+
+LICENSE
+==========================
+
+MIT License.
+
+
+Copyright
+==========================
+
+Copyright (c) 2013 rinrinne a.k.a. rin_ne
