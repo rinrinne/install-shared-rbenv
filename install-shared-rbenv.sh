@@ -7,7 +7,10 @@ CURRENT=`pwd`
 [ ! -z $RBENV_ROOT ] || RBENV_ROOT=/usr/local/rbenv
 [ ! -z $RBENV_VERSION ] || RBENV_VERSION=1.9.3-p385
 
+echo Install rbenv to $RBENV_ROOT with install $RBENV_VERSION...
+
 if [ -d $RBENV_ROOT ]; then
+  echo rbenv is already installed. So updating...
   cd $RBENV_ROOT
   git pull
   cd plugins/ruby-build
@@ -28,9 +31,13 @@ export RBENV_VERSION
 $RBENV_ROOT/bin/rbenv install $RBENV_VERSION
 $RBENV_ROOT/bin/rbenv rehash
 
+echo Install bundler...
 $RBENV_ROOT/bin/rbenv exec gem install bundler
 
+echo Generate dot.profile...
 cat dot.profile.sample | sed -e "s!__RBENV_ROOT__!$RBENV_ROOT!" > dot.profile
+
+echo Generate shared-rbenv...
 cat shared-rbenv.sample | sed -e "s!__RBENV_ROOT__!$RBENV_ROOT!" | \
   sed -e "s!__RBENV_VERSION__!$RBENV_VERSION!" > shared-rbenv
 chmod a+x shared-rbenv
