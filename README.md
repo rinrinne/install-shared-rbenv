@@ -1,7 +1,10 @@
 What is?
 ===========================
 
-This script installs rbenv then build ruby. Those are stored into shared directory. All user can use them with a bit setting.
+This script installs [rbenv][1] and [ruby-build][2] then build ruby. Those are stored into shared directory. All user can use them with a bit setting.
+
+[1]: https://github.com/sstephenson/rbenv
+[2]: https://github.com/sstephenson/ruby-build
 
 Install packages
 ===========================
