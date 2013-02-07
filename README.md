@@ -12,6 +12,18 @@ You need to install some libraries and commands for ruby-build. The below is pac
     tk-dev libreadline-dev zlib1g-dev libssl-dev libffi-dev
     libssl1.0.0 git-core curl
 
+Setup variables
+===========================
+
+You can use the below environment variables.
+
+<dl>
+  <dt>RBENV_ROOT</dt>
+  <dd>Install path for rbenv (default: /usr/local/bin/rbenv)</dd>
+  <dt>RBENV_VERSION</dt>
+  <dd>Ruby version you want to install (default: 1.9.3-p327)</dd>
+</dl>
+
 Install shared rbenv
 ===========================
 
@@ -39,14 +51,14 @@ Use shared rbenv without profile setting
 ============================
 
 ```
-$ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version /path/to/rbenv/bin/rbenv exec ruby SCRIPTFILE
+$ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv exec ruby SCRIPTFILE
 ```
 
 * If you export RBENV_ROOT and RBENV_VERSION, you can remove them from commnad line.
-* If you set default version using "rbenv global", The above command line can be run without RBENV_VERSION.
+* If you set default version using `rbenv global`, The above command line can be run without RBENV_VERSION.
 
 ```
-$ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version /path/to/rbenv/bin/rbenv global your-ruby-version
+$ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv global $RBENV_VERSION
 ```
 
 Use gem
@@ -54,3 +66,8 @@ Use gem
 
 bundle is already installed into shared ruby. So you can use gem via bundle.
 
+If you don't use any profile settings, bundle can be run with the below command.
+
+```
+$ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv exec bundle
+```
