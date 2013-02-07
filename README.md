@@ -8,9 +8,9 @@ Install packages
 
 You need to install some libraries and commands for ruby-build. The below is package list for Ubuntu.
 
-> build-essential libncurses-dev libgdbm-dev libyaml-dev
-> tk-dev libreadline-dev zlib1g-dev libssl-dev libffi-dev
-> libssl1.0.0 git-core curl
+    build-essential libncurses-dev libgdbm-dev libyaml-dev
+    tk-dev libreadline-dev zlib1g-dev libssl-dev libffi-dev
+    libssl1.0.0 git-core curl
 
 Install shared rbenv
 ===========================
