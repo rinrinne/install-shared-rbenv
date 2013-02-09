@@ -21,10 +21,10 @@ Setup variables
 You can use the below environment variables.
 
 <dl>
-  <dt>RBENV_ROOT</dt>
-  <dd>Install path for rbenv (default: /usr/local/bin/rbenv)</dd>
-  <dt>RBENV_VERSION</dt>
-  <dd>Ruby version you want to install (default: 1.9.3-p327)</dd>
+  <dt>`RBENV_ROOT`</dt>
+  <dd>Install path for rbenv (default: /usr/local/rbenv)</dd>
+  <dt>`RBENV_VERSION`</dt>
+  <dd>Ruby version you want to install (default: 1.9.3-p385)</dd>
 </dl>
 
 Install shared rbenv
