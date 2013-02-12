@@ -35,9 +35,9 @@ echo Install bundler...
 $RBENV_ROOT/bin/rbenv exec gem install bundler
 
 echo Generate dot.profile...
-cat dot.profile.sample | sed -e "s!__RBENV_ROOT__!$RBENV_ROOT!" > dot.profile
+cat samples/dot.profile | sed -e "s!__RBENV_ROOT__!$RBENV_ROOT!" > dot.profile
 
 echo Generate shared-rbenv...
-cat shared-rbenv.sample | sed -e "s!__RBENV_ROOT__!$RBENV_ROOT!" | \
+cat samples/shared-rbenv | sed -e "s!__RBENV_ROOT__!$RBENV_ROOT!" | \
   sed -e "s!__RBENV_VERSION__!$RBENV_VERSION!" > shared-rbenv
 chmod a+x shared-rbenv
