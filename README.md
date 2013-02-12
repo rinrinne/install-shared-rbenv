@@ -1,6 +1,9 @@
 Shared rbenv installer
 ===========================
 
+* Author: rinrinne
+* Repository: https://github.com/rinrinne/install-shared-rbenv
+
 This script installs [rbenv][1] and [ruby-build][2] then build ruby. Those are stored into shared directory. All user can use them with a bit setting.
 
 [1]: https://github.com/sstephenson/rbenv
