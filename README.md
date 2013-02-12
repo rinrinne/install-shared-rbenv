@@ -1,4 +1,4 @@
-What is?
+Shared rbenv installer
 ===========================
 
 This script installs [rbenv][1] and [ruby-build][2] then build ruby. Those are stored into shared directory. All user can use them with a bit setting.
@@ -7,7 +7,7 @@ This script installs [rbenv][1] and [ruby-build][2] then build ruby. Those are s
 [2]: https://github.com/sstephenson/ruby-build
 
 Install packages
-===========================
+---------------------------
 
 You need to install some libraries and commands for ruby-build. The below is package list for Ubuntu.
 
@@ -16,7 +16,7 @@ You need to install some libraries and commands for ruby-build. The below is pac
     libssl1.0.0 git-core curl
 
 Setup variables
-===========================
+---------------------------
 
 You can use the below environment variables.
 
@@ -28,7 +28,7 @@ You can use the below environment variables.
 </dl>
 
 Install shared rbenv
-===========================
+---------------------------
 
 ```
 $ ./install-shared-rbenv
@@ -38,7 +38,7 @@ If you want to install into system directory, this should be run as root.
 
 
 Use shared rbenv
-===========================
+---------------------------
 
 Without user setting
 ```
@@ -59,7 +59,7 @@ $ ./shared-rbenv
 You can move `shared-rbenv` to any directory then run it.
 
 Use shared rbenv without profile setting
-============================
+---------------------------
 
 ```
 $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv exec ruby SCRIPTFILE
@@ -79,7 +79,7 @@ $ ./shared-rbenv exec ruby SCRIPTFILE
 ```
 
 Use gem
-===========================
+---------------------------
 
 bundle is already installed into shared ruby. So you can use gem via bundle.
 
@@ -96,14 +96,14 @@ $ ./shared-rbenv exec bundle
 ```
 
 Update rbenv or install another ruby version
-===========================
+---------------------------
 
 Same as install.
 
 If `RBENV_ROOT` is already exist as directory, `install-shared-rbenv` will update rbenv and plugins then install ruby with `RBENV_VERSION`.
 
 FAQ
-===========================
+---------------------------
 
 ## What ruby version is available?
 
@@ -114,12 +114,12 @@ $ ./shared-rbenv install -l
 ```
 
 LICENSE
-==========================
+---------------------------
 
 MIT License.
 
 
 Copyright
-==========================
+---------------------------
 
 Copyright (c) 2013 rinrinne a.k.a. rin_ne
