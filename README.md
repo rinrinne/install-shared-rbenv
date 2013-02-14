@@ -30,6 +30,8 @@ You can use the below environment variables.
   <dd>Ruby version you want to install (default: 1.9.3-p385)</dd>
 </dl>
 
+If you prepare `.install` to current directory, This script reads it.
+
 Install shared rbenv
 ---------------------------
 
