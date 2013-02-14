@@ -4,6 +4,8 @@ set -e
 
 CURRENT=`pwd`
 
+[ -f .install ] && . .install
+
 [ ! -z $RBENV_ROOT ] || RBENV_ROOT=/usr/local/rbenv
 [ ! -z $RBENV_VERSION ] || RBENV_VERSION=1.9.3-p385
 
