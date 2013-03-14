@@ -47,7 +47,8 @@ Use shared rbenv
 
 Without user setting
 ```
-$ sudo cat dot.profile > /etc/profile.d/Z99-rbenv.sh
+$ sudo cp dot.profile /etc/profile.d/Z99-rbenv.sh
+$ sudo chmod a+x /etc/profile.d/Z99-rbenv.sh
 ```
 
 Or setup by each users
@@ -74,13 +75,14 @@ $ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbe
 * If you set default version using `rbenv global`, The above command line can be run without `RBENV_VERSION`.
 
 ```
-$ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; $RBENV_ROOT/bin/rbenv global $RBENV_VERSION
+$ RBENV_ROOT=/path/to/rbenv RBENV_VERSION=your-ruby-version; sudo -E $RBENV_ROOT/bin/rbenv global $RBENV_VERSION
 ```
 
 Or, run with `shared-rbenv`
 
 ```
 $ ./shared-rbenv exec ruby SCRIPTFILE
+$ sudo ./shared-rbenv global $RBENV_VERSION
 ```
 
 Use gem
@@ -116,7 +118,17 @@ At first, you should install once by default. Then you can run the below command
 
 ```
 $ ./shared-rbenv install -l
+
 ```
+
+## Is there difference between rbenv and shared-rbenv?
+
+Mainly meaning of global.
+
+In rbenv, global affects installed user, no effects to other users. But in share-rbenv, global affects installed system. It means that it affects all users.
+
+If you want to apply `global` same as rbenv, you should use `local` at home directory.
+
 
 LICENSE
 ---------------------------
