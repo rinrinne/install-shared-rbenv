@@ -7,7 +7,7 @@ CURRENT=`pwd`
 [ -f .install ] && . .install
 
 [ ! -z $RBENV_ROOT ] || RBENV_ROOT=/usr/local/rbenv
-[ ! -z $RBENV_VERSION ] || RBENV_VERSION=2.0.0-p195
+[ ! -z $RBENV_VERSION ] || RBENV_VERSION=2.0.0-p247
 
 echo Install rbenv to $RBENV_ROOT with install $RBENV_VERSION...
 
