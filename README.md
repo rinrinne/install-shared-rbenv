@@ -27,7 +27,7 @@ You can use the below environment variables.
   <dt>RBENV_ROOT</dt>
   <dd>Install path for rbenv (default: /usr/local/rbenv)</dd>
   <dt>RBENV_VERSION</dt>
-  <dd>Ruby version you want to install (default: 2.0.0-p195)</dd>
+  <dd>Ruby version you want to install (default: 2.0.0-p247)</dd>
 </dl>
 
 If you store them into `.install` in current directory, This script reads it.
@@ -118,7 +118,6 @@ At first, you should install once by default. Then you can run the below command
 
 ```
 $ ./shared-rbenv install -l
-
 ```
 
 ## Is there difference between rbenv and shared-rbenv?
